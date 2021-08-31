@@ -19,7 +19,7 @@ predicting customer abandonment based on information,
 - Evaluation of Model Performance
 - Identifying Strategies
 
-## `Business Problem: Churn Customer Forecast`:
+## `Business Problem: Churn Customer Forecast`
 
 The data set includes the demographic information, behavior, location information, and population information of the relevant region of a Telecom company presented on IBM Business Analytics. The aim is to predict customer abandonment using this information.
 

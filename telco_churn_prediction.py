@@ -167,18 +167,6 @@ df.groupby(["Churn Label", "Churn Value", "Customer Status"]).agg({"Tenure Month
 
 #***********************Variables in more than one dataset **********************************#
 
-# Let's delete one of the same columns "Tenure in Months" and "Tenure Months"
-# Let's delete one of the same columns as Device Protection Plan and Device Protection
-# Let's delete one of the same columns of Premium Tech Support and Tech Support
-# Churn Category and Churn Reason It's like an afterthought..
-# Churn Label and Churn Value target, we preferred the 1-0 one, let's delete the other one
-# We will calculate after CLTV Churn so we can delete,
-# Quarter and ID will not be used, we can delete,
-
-# NOT!!!
-# Customer Status	sonra çıkarılacak, yeni müşteri feature'ını oluşturup (tenure<=3) silelim:
-
-
 # Churn Category was associated with the churn reason in the status table, so we're using the one in the churn table so let's remove it:
 df.drop(columns=["Device Protection","Count", "Tenure in Months", "Churn Category","Tech Support","Churn Reason","Churn Label","CLTV","Quarter","ID"], axis=1, inplace=True)
 
